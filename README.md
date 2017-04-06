@@ -2,7 +2,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/purecss-sass.svg)](http://badge.fury.io/rb/purecss-sass)
 [![npm version](https://badge.fury.io/js/purecss-sass.svg)](http://badge.fury.io/js/purecss-sass)
-[![Build Status](https://travis-ci.org/rubysamurai/purecss-sass.svg?branch=v0.6.0)](https://travis-ci.org/rubysamurai/purecss-sass)
+[![Build Status](https://travis-ci.org/rubysamurai/purecss-sass.svg?branch=master)](https://travis-ci.org/rubysamurai/purecss-sass)
 
 Yahoo's [Pure](http://purecss.io/) is a set of small, responsive CSS modules that you can use in every web project.
 
@@ -13,7 +13,6 @@ Original Pure CSS files are converted using `sass-convert` and otherwise untouch
 ## Installation
 
 * [Ruby on Rails](#ruby-on-rails)
-* [Compass](#compass)
 * [Bower](#bower)
 * [npm](#npm)
 
@@ -37,51 +36,11 @@ Open `/app/assets/stylesheets/application.scss` file and add this line:
 
 Restart Rails web server if it was running and now your Rails application is powered by Pure CSS for Sass.
 
-### Compass
-
-To use Compass extension you'll need to install `purecss-sass` gem:
-
-```
-gem install purecss-sass
-```
-
-#### Existing Compass project
-
-If you have an existing Compass project, open `config.rb` file and require `purecss-sass` there:
-
-```ruby
-require 'purecss-sass'
-```
-
-Navigate to your project's folder and run command:
-
-```
-compass install purecss -r purecss-sass
-```
-
-This will create new file `styles.scss`, that imports all of Pure components.
-
-Instead of the install command provided above, you can manually import `purecss`:
-
-```
-@import 'purecss';
-```
-
-#### New Compass project
-
-If you are creating a new Compass project and wish to include `purecss-sass`, run command:
-
-```
-compass create project-name -r purecss-sass --using purecss
-```
-
-This command will create a new Compass project with `styles.scss` file, that imports all of Pure components.
-
 ### Bower
 
 To install `purecss-sass` Bower package execute this command:
 ```
-bower install purecss-sass#0.6.0+1
+bower install purecss-sass
 ```
 
 Then you will have a local copy of `purecss-sass` stylesheets to use in your application.
@@ -105,7 +64,6 @@ You can import individual Sass components like this:
 @import 'purecss/base';
 @import 'purecss/buttons';
 @import 'purecss/forms';
-@import 'purecss/forms-nr';
 @import 'purecss/grids';
 @import 'purecss/grids-responsive';
 @import 'purecss/menus';
